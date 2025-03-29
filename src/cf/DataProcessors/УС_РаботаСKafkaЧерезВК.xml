@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<DataProcessor uuid="17afb234-0dec-4c58-a415-bdc153735849">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.УС_РаботаСKafkaЧерезВК" category="Object">
+				<xr:TypeId>0d9c2d6b-d2c7-4f7f-bfa6-3c9eced894d1</xr:TypeId>
+				<xr:ValueId>7711b293-9a47-469e-abf5-36075aedf2c4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.УС_РаботаСKafkaЧерезВК" category="Manager">
+				<xr:TypeId>9e6b180a-4a9c-41b1-a806-c7ecbeeffc2b</xr:TypeId>
+				<xr:ValueId>5ba36988-284c-4d15-b131-1d47fead9b37</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>УС_РаботаСKafkaЧерезВК</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Работа с kafka через ВК</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<DefaultForm>DataProcessor.УС_РаботаСKafkaЧерезВК.Form.Пример</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Пример</Form>
+			<Template>librdkafka_win32</Template>
+			<Template>librdkafka_win64</Template>
+			<Template>librdkafka_linux32</Template>
+			<Template>librdkafka_linux64</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

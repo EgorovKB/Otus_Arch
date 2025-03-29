@@ -1,0 +1,35 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+' LAYOUT_WITH_LEGEND()
+
+title Архитектура 1С
+
+
+' Системы
+
+System_Boundary(ВМС, "1C: WMS") {
+    Container(НСИ_ВМС, "Учет НСИ", "")
+}
+
+System_Boundary(ЕРП, "1C:ЕРП") {
+    Container(НСИ_ЕРП, "Учет НСИ", "")
+    Container(ЗаказыПоставщикам, "Учет заказов поставщикам", "")
+    Component(http_сервис, "HTTP-сервис")
+}
+
+
+
+System_Ext(ШинаДанных, "EBS")  
+System_Ext(ВнешнийСервис, "В2В", "внешний сервис")  
+
+' Связи
+Rel(ВнешнийСервис, http_сервис, "Заказы поставщикам", "https")
+Rel(http_сервис, ЗаказыПоставщикам, "Заказы поставщикам")
+Rel(НСИ_ЕРП, ШинаДанных, "Номенклатура", "https")
+Rel(ШинаДанных, НСИ_ВМС, "Номенклатура", "https")
+
+
+@enduml
